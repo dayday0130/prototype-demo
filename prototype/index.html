@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>科研项目管理原型</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">GT</div>
+        <div>
+          <div class="brand-title">GTTC广纺综合业务管理系统</div>
+          <div class="brand-version">V20260128.1</div>
+        </div>
+      </div>
+      <nav class="menu">
+        <div class="menu-section is-open">
+          <button class="menu-parent" type="button">
+            <span class="menu-icon">▦</span>
+            <span>科研项目管理</span>
+            <span class="menu-arrow">⌃</span>
+          </button>
+          <div class="submenu" id="moduleMenu"></div>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="app-shell">
+      <header class="topbar">
+        <button class="hamburger" type="button" aria-label="折叠菜单">☰</button>
+        <div class="breadcrumb" id="breadcrumb">首页 / 科研项目管理 / 科研项目库</div>
+        <div class="prototype-note">当前仅为页面原型</div>
+        <div class="top-actions">
+          <button class="icon-button" type="button" aria-label="搜索">⌕</button>
+          <button class="icon-button" type="button" aria-label="全屏">⛶</button>
+          <div class="avatar">杨</div>
+          <span>杨晓红</span>
+        </div>
+      </header>
+
+      <div class="tabbar" id="tabbar"></div>
+
+      <section class="content" id="app"></section>
+    </main>
+
+    <div class="toast" id="toast"></div>
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-panel">
+        <div class="modal-head">
+          <strong id="modalTitle">导入月度明细</strong>
+          <button class="icon-button" type="button" data-close-modal>×</button>
+        </div>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
